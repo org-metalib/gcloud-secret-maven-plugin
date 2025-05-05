@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.metalib.gcloud.secrets</groupId>
+  <artifactId>gcloud-secret-maven-plugin</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Test MyMojo</name>
+
+  <properties>
+<!--    <gcloud.secrets.names>1,2,3</gcloud.secrets.names>-->
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-my-plugin</artifactId>
+        <configuration>
+          <!-- Specify the MyMojo parameter -->
+          <gcloud.secrets.dir>target/test-harness/project-to-test</gcloud.secrets.dir>
+          <secrets>
+            <secret>s0</secret>
+            <secret>s1</secret>
+            <secret>s2</secret>
+          </secrets>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
