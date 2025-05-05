@@ -9,7 +9,7 @@
         <version>0.0.46</version>
     </parent>
 
-    <groupId>org.metalib.gcloud.secrets</groupId>
+    <groupId>org.metalib.maven.plugin</groupId>
     <artifactId>gcloud-secret-maven-plugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
