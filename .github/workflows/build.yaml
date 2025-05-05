@@ -28,7 +28,12 @@ jobs:
           git config --global user.name "${GIT_CONFIG_USER_NAME}"
       - name: release maven artifact
         run: |
-          ./mvnw -Dstyle.color=always -s ./.mvn/settings.xml release:prepare release:perform -B -DskipTests=true -Djava.security.egd=file:/dev/./urandom -DscmCommentPrefix="[mvn-release] "
+          ./mvnw -Pmaven-central-publishing,gpg-sign \
+                 -Dstyle.color=always \
+                 -s ./.mvn/settings.xml \
+                 release:prepare \
+                 release:perform \
+                 -B -DskipTests=true -Djava.security.egd=file:/dev/./urandom -DscmCommentPrefix="[mvn-release] "
     env:
       GITHUB_TOKEN: ${{ github.token }}
       GIT_CONFIG_USER_EMAIL: ${{ secrets.GIT_CONFIG_USER_EMAIL }}
