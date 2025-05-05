@@ -10,7 +10,7 @@
 
     <groupId>org.metalib.maven.plugin</groupId>
     <artifactId>gcloud-secret-maven-plugin</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>gcloud-secret-maven-plugin Maven Plugin</name>
@@ -156,6 +156,6 @@
         <connection>scm:git:git://github.com/org-metalib/gcloud-secret-maven-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/org-metalib/gcloud-secret-maven-plugin.git</developerConnection>
         <url>https://github.com/org-metalib/gcloud-secret-maven-plugin</url>
-        <tag>v0.0.2</tag>
+        <tag>v0.0.3</tag>
     </scm>
 </project>
