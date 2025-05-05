@@ -10,7 +10,7 @@
 
     <groupId>org.metalib.maven.plugin</groupId>
     <artifactId>gcloud-secret-maven-plugin</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>gcloud-secret-maven-plugin Maven Plugin</name>
